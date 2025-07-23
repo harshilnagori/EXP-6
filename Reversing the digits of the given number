@@ -1,0 +1,24 @@
+// Harshil Nagori
+// 24070123046
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int number;
+    int reversedNumber = 0;
+    int remainder;
+
+    cout << "Enter an integer: ";
+    cin >> number;
+
+    while (number != 0) {
+        remainder = number % 10;
+        reversedNumber = reversedNumber * 10 + remainder;
+        number /= 10;
+    }
+
+    cout << "Reversed number: " << reversedNumber << endl;
+
+    return 0;
+}
